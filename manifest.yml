@@ -1,0 +1,8 @@
+---
+applications:
+- name: wp
+  memory: 512M
+  instances: 2
+  buildpack: https://github.com/cloudfoundry/php-buildpack
+  services:
+    - wpdb
