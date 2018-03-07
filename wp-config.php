@@ -88,5 +88,7 @@ define('WP_DEBUG', true);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+/* point wp-content dir to our volume service */
+define( 'WP_CONTENT_DIR', '/mnt/wp-content' );
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

@@ -1,8 +1,9 @@
 ---
 applications:
-- name: wp
+- name: wp-demo
   memory: 512M
   instances: 2
   buildpack: https://github.com/cloudfoundry/php-buildpack
   services:
     - wpdb
+    - disk1
